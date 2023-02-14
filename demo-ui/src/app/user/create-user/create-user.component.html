@@ -1,0 +1,13 @@
+<p>create-user works!</p>
+<h1>Angular Router App</h1>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+  <ul>
+    <li><a routerLink="/dashboard/dashboard-component" routerLinkActive="active" ariaCurrentWhenActive="page">Create User Component</a></li>
+    <li><a routerLink="/user/searchUser" routerLinkActive="active" ariaCurrentWhenActive="page">Search Component</a></li>
+    <li><a routerLink="login/:loginId" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a></li>
+
+</ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>  
